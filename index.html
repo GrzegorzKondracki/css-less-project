@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <footer class="footer">
+        <div class="newsletter">
+            <h2 class="newsletter__headline">Get updates on <span class="newsletter__span">Diocesan<span></h2>
+            <p class="newsletter__text">Enter your name and email to get updates and news from the Diocese.</p>
+            <form class="newsletter__form">
+                <input class="newsletter__input" type="text" placeholder="Name">
+                <input class="newsletter__input" type="email" placeholder="Email">
+                <button class="newsletter__btn">
+                    <a href="#" class="newsletter__signup">SIGN
+                        UP
+                        <i class="newsletter__icon fas fa-angle-right"></i>
+                    </a>
+                </button>
+
+            </form>
+        </div>
+
+        <div class="infoItems">
+
+            <div class="infoItems__img">
+                <img src="./img/bg-image.svg" alt="">
+            </div>
+
+            <div class="infoItems__item">
+                <div>
+                    <h4 class="infoItems__headline">DIOCESE OF ANY CITY USA</h4>
+                    <p class="infoItems__text">P.O. Box 123 Any City, TX 12345</p>
+                    <p class="infoItems__text">99201-1453</p>
+                </div>
+            </div>
+
+            <div class="infoItems__item">
+                <div>
+                    <h4 class="infoItems__headline">CONNECT WITH US</h4>
+                    <address>
+                        <a class="infoItems__link" href=" mailto:support@eCatholic.com">support@eCatholic.com</a>
+                    </address>
+                    <p class="infoItems__text">1-555-555-55553</p>
+                </div>
+            </div>
+            <div class="infoItems__item">
+                <div class="infoItems__links">
+                    <h4 class="infoItems__headline">LINKS</h4>
+                    <ul class="infoItems__ul">
+                        <li><a href="#" class="infoItems__link" onclick="openForm()">Bishop Tom Thumb</a></li>
+                        <li><a href="#" class="infoItems__link">Parish Mass Times</a></li>
+                        <li><a href="#" class="infoItems__link">Vocations</a></li>
+                        <li><a href="#" class="infoItems__link">Find a School</a></li>
+                        <li><a href="#" class="infoItems__link">Annual Catholic Appeal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottomBelt">
+            <p class="bottomBelt__text">© 2020 Catholic Diocese of Any City USA. All Rights Reserved.</p>
+            <div class="bottomBelt__links">
+                <a href="#" class="bottomBelt__link">Login</a>
+                <p> &nbsp;| powered by&nbsp;</p>
+                <a href="#" class="bottomBelt__link">eCatholic®</a>
+            </div>
+
+        </div>
+
+        <div class="popup" id="popup">
+            <p class="popup__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus odit minus
+                exercitationem impedit numquam fuga aliquam aut consequatur quibusdam rerum nemo maxime voluptatem,
+                eaque facilis doloremque debitis provident quis vero?
+            </p>
+            <button type="button" class="popup__btn cancel" onclick="closeForm()">Close</button>
+        </div>
+    </footer>
+
+</body>
+
+
+<script src="https://kit.fontawesome.com/9973d20302.js"></script>
+<script>
+    function openForm() {
+        document.getElementById("popup").style.display = "flex";
+    }
+
+    function closeForm() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+
+</html>
